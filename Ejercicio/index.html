@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <style>
+     
+     </style>
+     <link rel="stylesheet"  type="text/css"  href="style.css">
+     
+</head>
+<body> 
+     <main>
+        <form action="./procesaFormulario.php" class="formulario" id="formulario">
+          <fieldset class="formulario-registro">
+               <header>Create Account</header>
+            <div class="caja"></div>
+            <div class="formulario__grupo formulario__grupo-acierto" id="grupo__nombre" ></div>
+                 <label for="nombre"  class="formulario__label">Nombre</label>
+                 <div class="formulario__grupo-input">
+                 <input type="text" required class="formulario__input" name="nombre" id="Nombre"
+                 pattern="[A-Za-z]">
+                 <span id="error-icon">
+                    <img src="circle-exclamation-solid.svg">
+                 </span>
+                 <span id="acierto-icon">
+                    <img src="circle-check-solid.svg">
+                 </span>
+            </div>
+            <p class="formulario__input-error">No se admiten números.</p>
+
+            <div class="formulario__grupo formulario__grupo-acierto" id="grupo__email"></div>
+                 <label for="email"  class="formulario__label">Email</label>
+                 <div class="formulario__grupo-input">
+                 <input type="email" required class="formulario__input" name="email" id="email"
+                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                 <span id="error-icon">
+                    <img src="circle-exclamation-solid.svg">
+                 </span>
+                 <span id="acierto-icon">
+                    <img src="circle-check-solid.svg">
+                 </span>
+            </div>
+            <p class="formulario__input-error">Email inválido.</p>
+
+            <div class="formulario__grupo formulario__grupo-acierto" id="grupo__clave"></div>
+                 <label for="clave"  class="formulario__label">Clave</label>
+                 <div class="formulario__grupo-input">
+                 <input type="password" required  class="formulario__input" name="clave" id="clave"
+                 minlength="8">
+                 <span id="error-icon">
+                    <img src="circle-exclamation-solid.svg">
+                 </span>
+                 <span id="acierto-icon">
+                    <img src="circle-check-solid.svg">
+                 </span>
+            </div>
+            <p class="formulario__input-error">No debe tener más de 8 caracteres.</p>
+
+            <div class="formulario__grupo formulario__grupo-acierto" id="grupo__confirme su clave"></div>
+                 <label for="clave"  class="formulario__label">Confirme su clave</label>
+                 <div class="formulario__grupo-input">
+                 <input type="password" required  class="formulario__input" name="clave" id="confirme su clave">
+                 <span id="error-icon">
+                    <img src="circle-exclamation-solid.svg">
+                 </span>
+                 <span id="acierto-icon">
+                    <img src="circle-check-solid.svg">
+                 </span>
+            </div>
+            <p class="formulario__input-error">Las contraseñas no coincien.</p>
+
+            <div class="formulario__gurpo formulario__grupo-boton-enviar">
+                  <button type="submit" class="formulario__boton">ENVIAR</button>
+          
+
+          
+                  </form>
+          </div>
+          </fieldset>
+        </form>
+     </main> 
+     <script src="index.js"></script>
+     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+                
+                
